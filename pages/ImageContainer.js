@@ -36,14 +36,13 @@ export default function ImageContainer({ dataaa, fetchImages, hasMore })  {
                           </a>
                       </div>
                       <div className="flex justify-between -mt-4 px-4">
-                          <span
+                          {/* <span
                               className="inline-block z-50 ring-4 bg-red-500 ring-gray-800 rounded-full text-sm font-medium tracking-wide text-gray-100 px-3 pt-0.5"
                           >{item.tags.map((item, index) => (
                               <div className="inline px-1" key={index}>
                                   {item.title}
                               </div>
-                          ))}</span
-                          >
+                          ))}</span> */}
                           <span
                               className="flex h-min space-x-1 items-center rounded-full text-gray-400 bg-gray-800 py-1 px-2 text-xs font-medium"
                           >
