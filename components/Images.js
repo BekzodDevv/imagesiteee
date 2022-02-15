@@ -6,7 +6,7 @@ export default function Images({ item, index }) {
 
 
 
-    return <div key={index} className="max-w mt-5 flex flex-col  mb-5 h-full max-w-lg mx-auto bg-gray-800 rounded-lg bg-white rounded-lg border mx-auto border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    return <div key={item.id} className="max-w mt-5 flex flex-col  mb-5 h-full max-w-lg mx-auto bg-gray-700 rounded-lg bg-white rounded-lg border mx-auto border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="w-full aspect-video ...">
             <a href={item.pageURL}>
                 <Image
@@ -25,15 +25,16 @@ export default function Images({ item, index }) {
             </a>
         </div>
         <div className="flex justify-between -mt-4 px-4">
-            {/* <span
-                                              className="inline-block z-50 ring-4 bg-red-500 ring-gray-800 rounded-full text-sm font-medium tracking-wide text-gray-100 px-3 pt-0.5"
-                                          >{item.tags.map((item, index) => (
-                                              <div className="inline px-1" key={index}>
-                                                  {item.title}
-                                              </div>
-                                          ))}</span> */}
             <span
-                className="flex h-min space-x-1 items-center rounded-full text-gray-400 bg-gray-800 py-1 px-2 text-xs font-medium"
+                className="inline-block z-50 ring-4 bg-red-500 ring-gray-800 rounded-full text-sm font-medium tracking-wide text-gray-100 px-3 pt-0.5"
+            >{item.tags.map((item, index) => (
+                <div className="inline px-1" key={index}>
+                    {item.title}
+                </div>
+            ))}</span
+            >
+            <span
+                className="flex h-min space-x-1 z-50 items-center rounded-full text-gray-400 bg-gray-800 py-1 px-2 text-xs font-medium"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,15 +61,15 @@ export default function Images({ item, index }) {
             </h1>
         </div>
         {/* <div className="px-4 space-y-2">
-                           <p className="text-gray-400 font-normal leading-5 tracking-wide">
-                               Tailwind CSS v2.1 introduces a new just-in-time compiler for Tailwind CSS that generates your styles on-demand...
-                           </p>
-                           <router-link
-                               to="blog/detail"
-                               className="font-bold hover:text-blue-400 text-gray-100"
-                           >read more...</router-link
-                           >
-                       </div> */}
+<p className="text-gray-400 font-normal leading-5 tracking-wide">
+Tailwind CSS v2.1 introduces a new just-in-time compiler for Tailwind CSS that generates your styles on-demand...
+</p>
+<router-link
+to="blog/detail"
+className="font-bold hover:text-blue-400 text-gray-100"
+>read more...</router-link
+>
+</div> */}
         <div className="flex flex-row items-end h-full w-full px-4 mt-4">
             <div className="flex border-t border-gray-700 w-full py-4">
                 <div
