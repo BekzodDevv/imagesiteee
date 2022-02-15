@@ -7,12 +7,13 @@ import ImageContainer from "./ImageContainer"
 
 export default function Home() {
   const [data, setData] = useState([]);
-  const [query, setQuery] = useState("code");
+  const [query, setQuery] = useState("random");
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
   const client_id = "JFkRBsfjElKsPA7MwxDuoi3whaqw0SmQFgJH4JUt_0Y";
   const fetchUrl = `https://api.unsplash.com/search/photos?client_id=${client_id}&query=${query}&page=${page}`;
+ console.log(fetchUrl)
 
   const fetchImages = () => {
     axios
