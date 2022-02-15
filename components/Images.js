@@ -8,7 +8,7 @@ export default function Images({ item }) {
     console.log(item)
     return <div key={item.id} className="max-w mt-5 flex flex-col  mb-5 h-full max-w-lg mx-auto bg-gray-800 rounded-lg rounded-lg border mx-auto border-gray-200 shadow-md">
         <div className="w-full aspect-auto ...">
-            <a target="_blank" href={item.pageURL}>
+            <a target="_blank" rel="noreferrer" href={item.pageURL}>
                 <Image
                     loader={item.urls.small}
                     src={item.urls.small}
@@ -114,7 +114,7 @@ className="font-bold hover:text-blue-400 text-gray-100"
                         <p className="font-medium">{item.likes}</p>
 
 
-                        <a target="_blank" href={item.user.social.portfolio_url}>
+                        <a target="_blank" rel="noreferrer" href={item.user.social.portfolio_url}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5  opacity-50 m-2"
