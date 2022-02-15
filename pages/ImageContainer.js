@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import InfiniteScroll from "react-infinite-scroll-component";
 import Images from "../components/Images";
 
