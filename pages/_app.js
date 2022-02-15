@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import '../styles/globals.css'
-import Script from 'next/script';
+// import Script from 'next/script';
 
 
 function MyApp({ Component, pageProps }) {
@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
 
     <div>
-
+{/* 
       <Script
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=G-ZZ167BLGWC`}
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
             page_path: window.location.pathname,
           });
         `}
-      </Script>
+      </Script> */}
 
 
 
