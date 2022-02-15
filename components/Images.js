@@ -2,11 +2,11 @@
 import Image from "next/image"
 
 
-export default function Images({ item }) {
+export default function Images({ item, index }) {
 
 
 
-    return <div key={item.id} className="max-w mt-5 flex flex-col  mb-5 h-full max-w-lg mx-auto bg-gray-800 rounded-lg bg-white rounded-lg border mx-auto border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    return <div key={index} className="max-w mt-5 flex flex-col  mb-5 h-full max-w-lg mx-auto bg-gray-800 rounded-lg bg-white rounded-lg border mx-auto border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="w-full aspect-video ...">
             <a href={item.pageURL}>
                 <Image
