@@ -17,11 +17,13 @@ export default function ImageContainer({ dataaa, fetchImages, hasMore }) {
         >
 
 
-            {dataaa ? dataaa.map((item) => (
-                <div key={item.id} className="xl:columns-3 md:columns-2 sm:columns-1  container mx-auto mt-5">
-                    <Images item={item} />
-                </div>
-            )) : "Loading..."}
+            <div className="xl:columns-3 md:columns-2 sm:columns-1  container mx-auto mt-5">
+                {dataaa ? dataaa.map((item) => (
+                    <div key={item.id}>
+                        <Images item={item} />
+                    </div>
+                )) : "Loading..."}
+            </div>
 
         </InfiniteScroll >
     </div >;
