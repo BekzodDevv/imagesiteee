@@ -4,18 +4,12 @@ import Script from 'next/script';
 
 
 function MyApp({ Component, pageProps }) {
+
   return (
 
+    <div>
 
-    
-
-
-
-
-
-    <Layout>
-      
-      <Script 
+      <Script
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=G-ZZ167BLGWC`}
       />
@@ -29,12 +23,22 @@ function MyApp({ Component, pageProps }) {
           });
         `}
       </Script>
-      <Component {...pageProps} />
 
-      
-    </Layout>
 
-    
+
+
+
+
+      <Layout>
+
+
+        <Component {...pageProps} />
+
+
+      </Layout>
+
+
+    </div>
   )
 }
 
