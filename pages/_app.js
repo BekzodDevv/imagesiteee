@@ -35,7 +35,9 @@ function MyApp({ Component, pageProps }) {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-ZZ167BLGWC');
+          gtag('config', 'G-ZZ167BLGWC', {
+            page_path: window.location.pathname,
+          });
         `}
       </Script>
 
