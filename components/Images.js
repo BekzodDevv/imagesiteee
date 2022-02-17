@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Images({ item }) {
 
 
-    console.log(item)
+  
     return <div key={item.id} className="max-w mt-5 flex flex-col  mb-5 h-full max-w-lg mx-auto bg-gray-800 rounded-lg rounded-lg border mx-auto border-gray-200 shadow-md">
         <div className="w-full aspect-auto ...">
             <a target="_blank" rel="noreferrer" href={item.pageURL}>

@@ -13,7 +13,9 @@ export default function Home() {
 
   const client_id = "JFkRBsfjElKsPA7MwxDuoi3whaqw0SmQFgJH4JUt_0Y";
   const fetchUrl = `https://api.unsplash.com/search/photos?client_id=${client_id}&query=${query}&page=${page}`;
- console.log(fetchUrl)
+
+
+
 
   const fetchImages = () => {
     axios
@@ -26,6 +28,8 @@ export default function Home() {
       });
     setPage(page + 1);
   };
+
+  
   const searchImages = (e) => {
     if (e.keyCode === 13) {
       setQuery(e.target.value);
@@ -36,6 +40,9 @@ export default function Home() {
     fetchImages();
   }, [query]);
 
+ 
+
+
   return (
     <div>
       <Head>
@@ -44,8 +51,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Search searchImages={searchImages} />
-      
+      <Search searchImages={searchImages} fetchImages={fetchImages} />
+
       <ImageContainer dataaa={data} fetchImages={fetchImages} hasMore={hasMore} />
 
 

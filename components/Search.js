@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function Search({  searchImages }) {
+function Search({  searchImages,fetchImages }) {
 
     return <div>
         <div>
@@ -19,12 +19,12 @@ function Search({  searchImages }) {
                         />
                     </div>
                     <div>
-                        <button type="submit" className="flex items-center bg-blue-500 justify-center w-12 h-12 text-white rounded-r-lg">
+                        {/* <button  type="submit" className="flex items-center bg-blue-500 justify-center w-12 h-12 text-white rounded-r-lg">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>
